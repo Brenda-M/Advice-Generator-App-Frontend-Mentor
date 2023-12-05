@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+#outer-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  background-color: hsl(217, 19%, 24%);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+@media only screen and (max-width: 375px) {
+  #card {
+    padding: 1.5rem;
+  }
+}
+
+#advice-number {
+  font-size: 12px;
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 375px) {
+  #advice-number {
+    font-size: 10px;
+  }
+}
+
+/* ... your existing styles ... */
+#quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#quote-container .quote-text {
+  display: inline;
+  width: 100%;
+  font-size: 28px;
+  margin: 0 2px;
+  color: hsl(193, 38%, 86%);
+}
+#quote-container .quote-text::before, #quote-container .quote-text::after {
+  content: "“";
+  color: hsl(193, 38%, 86%);
+  margin-right: 2px;
+}
+#quote-container .quote-text::after {
+  content: "”";
+  margin-left: 2px;
+}
+@media only screen and (max-width: 375px) {
+  #quote-container .quote-text {
+    font-size: 16px;
+  }
+}
+
+#dice-icon {
+  font-size: 24px;
+  color: hsl(193, 38%, 86%);
+  margin-right: 8px;
+}
+
+#dice-img:hover {
+  filter: brightness(1.2);
+}
+
+#divider {
+  padding: 2rem 0 2rem 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dice-container {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100%;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#dice-container:hover, #dice-container:focus {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%);
+}
+@media only screen and (max-width: 375px) {
+  #dice-container {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+
+#dice-container.glow {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 40px hsl(150, 100%, 66%);
+}
+
+/*# sourceMappingURL=styles.css.map */
